@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Digital Product Bundle - 10,000+ Files for ₹249</title>
+    <meta name="description" content="Get instant access to 10,000+ premium digital assets including courses, templates, videos, and more for just ₹249. Perfect for creators and entrepreneurs.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#10B981', // Emerald-500
+                        secondary: '#064E3B', // Emerald-900
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        
+        .hover-scale {
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+
+        .price-tag {
+            background: #10B981;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+        }
+
+        .countdown-box {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            backdrop-filter: blur(4px);
+        }
+
+        .countdown-number {
+            min-width: 2.5rem;
+            text-align: center;
+            padding: 0.5rem;
+            background: rgba(16, 185, 129, 0.1);
+            border-radius: 0.5rem;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-primary">Premium Bundle</h1>
+            <div class="space-x-6">
+                <a href="#features" class="hover:text-primary transition-colors">Features</a>
+                <a href="#categories" class="hover:text-primary transition-colors">Categories</a>
+                <a href="#access" class="hover:text-primary transition-colors">How to Access</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 px-4 bg-gradient-to-br from-green-50 via-white to-emerald-50 relative overflow-hidden">
+        <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between relative">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <div class="price-tag inline-block px-6 py-2 text-white text-lg font-bold mb-4">
+                    Special Price: ₹249 Only!
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                    Unlock 10,000+ Premium Digital Files for Just ₹249
+                </h1>
+                <p class="text-xl text-gray-600 mb-8">
+                    Get instant access to a massive collection of premium resources worth ₹75,000+. Perfect for creators, designers, and entrepreneurs.
+                </p>
+                <button onclick="window.location.href='https://rzp.io/rzp/Q3DqCRli'" class="bg-primary hover:bg-secondary text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors hover-scale">
+                    Buy Now - Just ₹249
+                </button>
+                <div class="mt-6 countdown-box rounded-lg px-6 py-4 inline-block shadow-lg">
+                    <p class="text-gray-600 font-medium mb-2">🔥 Limited Time Offer Ends In:</p>
+                    <div id="countdown" class="text-2xl font-bold text-secondary flex items-center gap-2">
+                        <div>
+                            <span id="days" class="countdown-number">00</span>
+                            <span class="text-sm block text-gray-500 mt-1">Days</span>
+                        </div>
+                        <span class="text-gray-400">:</span>
+                        <div>
+                            <span id="hours" class="countdown-number">00</span>
+                            <span class="text-sm block text-gray-500 mt-1">Hours</span>
+                        </div>
+                        <span class="text-gray-400">:</span>
+                        <div>
+                            <span id="minutes" class="countdown-number">00</span>
+                            <span class="text-sm block text-gray-500 mt-1">Mins</span>
+                        </div>
+                        <span class="text-gray-400">:</span>
+                        <div>
+                            <span id="seconds" class="countdown-number">00</span>
+                            <span class="text-sm block text-gray-500 mt-1">Secs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="mockup.jpg" alt="Premium Digital Product Bundle featuring courses, templates, and resources" class="w-full max-w-md rounded-lg shadow-xl hover-scale">
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="py-16 bg-gradient-to-b from-gray-50 to-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-4 text-center">What's Inside Your Bundle?</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">Get instant access to these premium resources worth ₹75,000+</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Category Cards -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover-scale border border-gray-100">
+                    <div class="text-4xl mb-4">📚</div>
+                    <h3 class="text-xl font-bold mb-4 text-primary">Courses & Ebooks</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Digital Marketing Masterclass
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Social Media Growth Guide
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Passive Income Strategies
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Business Development Course
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 hover-scale">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Graphic & Design Templates</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• Instagram Post Templates</li>
+                        <li>• YouTube Thumbnails Pack</li>
+                        <li>• Logo Design Templates</li>
+                        <li>• Business Card Designs</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 hover-scale">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Stock Videos & Sounds</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• 4K Stock Footage</li>
+                        <li>• Background Music Library</li>
+                        <li>• Sound Effects Pack</li>
+                        <li>• Motion Graphics</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 hover-scale">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Business Tools</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• Invoice Templates</li>
+                        <li>• Business Plan Templates</li>
+                        <li>• Financial Calculators</li>
+                        <li>• Project Management Tools</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 hover-scale">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Social Media Kits</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• Instagram Growth Tools</li>
+                        <li>• Content Calendar Templates</li>
+                        <li>• Hashtag Collections</li>
+                        <li>• Caption Templates</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6 hover-scale">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Marketing Guides</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• SEO Optimization Guide</li>
+                        <li>• Email Marketing Templates</li>
+                        <li>• Lead Generation Tools</li>
+                        <li>• Monetization Strategies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Don't Miss This Incredible Offer!</h2>
+            <p class="text-xl mb-8">Get Instant Access to All Resources for Just ₹249</p>
+            <button onclick="window.location.href='https://rzp.io/rzp/Q3DqCRli'" class="bg-white text-primary hover:bg-gray-100 font-bold py-4 px-8 rounded-lg text-lg transition-colors hover-scale">
+                Get Access Now
+            </button>
+        </div>
+    </section>
+
+    <!-- How to Access Section -->
+    <section id="access" class="py-12 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-6">How to Access Your Files</h2>
+            <div class="max-w-2xl mx-auto bg-gray-50 p-6 rounded-lg">
+                <ol class="text-left space-y-4 text-gray-600">
+                    <li>1. Complete your purchase</li>
+                    <li>2. Receive instant access to Google Drive / MEGA links</li>
+                    <li>3. Download files using any browser</li>
+                    <li>4. Extract using WinRAR or 7-Zip (free software)</li>
+                    <li>5. Start using your premium resources!</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>© 2024 Premium Digital Bundle. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-primary transition-colors">Contact Support</a>
+                    <a href="#" class="hover:text-primary transition-colors">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Animate sections on scroll
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'all 0.6s ease-out';
+            observer.observe(section);
+        });
+
+        // Set the date we're counting down to (7 days from now)
+        const countDownDate = new Date();
+        countDownDate.setDate(countDownDate.getDate() + 7);
+
+        function updateCountdown() {
+            // Get today's date and time
+            const now = new Date().getTime();
+        
+            // Find the distance between now and the count down date
+            const distance = countDownDate - now;
+        
+            // Time calculations for days, hours, minutes and seconds
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+            // Display the result
+            document.getElementById("days").textContent = String(days).padStart(2, '0');
+            document.getElementById("hours").textContent = String(hours).padStart(2, '0');
+            document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
+            document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
+        
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(timerInterval);
+                document.getElementById("countdown").innerHTML = "OFFER EXPIRED";
+            }
+        }
+
+        // Update the countdown every second
+        updateCountdown(); // Initial call
+        const timerInterval = setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>
